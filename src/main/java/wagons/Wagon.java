@@ -1,32 +1,24 @@
 package wagons;
 
 public abstract class Wagon {
-   int quantity;
-   String name;
+   int unitQuantity;
+   String unitType;
 
-   public Wagon(int quantity, String name) {
-      this.quantity = quantity;
-      this.name = name;
+   public Wagon(int unitQuantity, String unitName) {
+      this.unitQuantity = unitQuantity;
+      this.unitType = unitName;
    }
 
-   public int getQuantity() {
-      return quantity;
+   public int getUnitQuantity() {
+      return unitQuantity;
    }
 
-   public void setQuantity(int quantity) {
-      this.quantity = quantity;
-   }
-
-   public String getName() {
-      return name;
-   }
-
-   public void setName(String name) {
-      this.name = name;
+   public String getUnitType() {
+      return unitType;
    }
 
    @Override
    public String toString() {
-      return "Wagon{" + "quantity=" + quantity + ", name='" + name + '\'' + '}';
+      return "Wagon " + "unitQuantity = " + unitQuantity + ", unitName = '" + unitType + '\'' + " ";
    }
 }

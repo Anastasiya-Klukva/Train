@@ -1,5 +1,5 @@
 package type;
 
 public enum PassengerWagonTypes {
-    ADULTS, CHILDREN
+    SLEEP_WAGON, COMMON_WAGON
 }
